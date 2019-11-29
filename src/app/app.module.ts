@@ -7,13 +7,11 @@ import { StoreModule } from 'store/store.module';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HttpClientModule } from '@angular/common/http';
 import { AppInjector } from 'shared/abstracts/app-injector.service';
-import { LoginService } from 'app/login/login.service';
+import { LoginService } from 'services/login.service';
 import { LinkService } from 'shared/hateoas/link.service';
-import { HomeComponent } from './home/home.component';
-import { HomeNameComponent } from './home/home-name/home-name.component';
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent, HomeNameComponent],
+    declarations: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
